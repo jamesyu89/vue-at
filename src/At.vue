@@ -345,6 +345,7 @@ export default {
 
     closePanel () {
       if (this.atwho) {
+        this.$emit("at-user",this.atwho)
         this.atwho = null
       }
     },
